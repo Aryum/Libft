@@ -43,13 +43,13 @@ First library created at the 42 course, where we are supposed to replicate vario
   - ft_putstr_fd _(puts string in file descriptor)_
   - ft_putendl_fd _(puts string in file descriptor with new line in the end)_
   - ft_putnbr_fd _(converts int to string and puts it into file descriptor)_
- 
-  - **Linked Lists**
-    - ft_lstnew _(creates new list node)_
-    - ft_lstmap _(duplicates a list and applies a function over it)_
-    - ft_lstlast _(gets last lst node)_
-    - ft_lstiter _(iterates through a list and applies a function over it)_
-    - ft_lstdelone _(delete a node)_
-    - ft_lstadd_back _(adds node to back of the list)_
-    - ft_lstadd_front _(adds node to beggining of the list)_
-    - ft_lstclear _(free entire list)_
+
+- **Linked Lists**
+  - ft_lstnew _(creates new list node)_
+  - ft_lstmap _(duplicates a list and applies a function over it)_
+  - ft_lstlast _(gets last lst node)_
+  - ft_lstiter _(iterates through a list and applies a function over it)_
+  - ft_lstdelone _(delete a node)_
+  - ft_lstadd_back _(adds node to back of the list)_
+  - ft_lstadd_front _(adds node to beggining of the list)_
+  - ft_lstclear _(free entire list)_
