@@ -1,5 +1,5 @@
 # Libft
-First library created at the 42 course, where we are supposed to replicate various functions already present in a lot of C libraries and some other that might help in future projects.
+First library created at the 42 course, where we are supposed to replicate various functions already present in some C libraries and other that might help in future projects.
 
 ## Functions present
 - **Characters**
