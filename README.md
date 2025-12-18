@@ -1,7 +1,7 @@
 # Libft
 First library created at the 42 course, where we are supposed to replicate various functions already present in some C libraries and other that might help in future projects.
 
-## Functions present
+## Functions
 - **Characters**
   - ft_isalpha _(check if its a letter)_
   - ft_isdigit _(check if its a number)_
