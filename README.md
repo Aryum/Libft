@@ -1,5 +1,6 @@
+
 # Libft
-First library created at the 42 course, where we are supposed to replicate various functions already present in some C libraries and other that might help in future projects. A project meant to teach us about rigor and to check for edge cases 
+First library created at the 42 course, where we are supposed to replicate various functions already present in some C libraries and others that might help in future projects. A project meant to teach us about rigor and to check for edge cases 
 
 ## Functions
 - **Characters**
@@ -16,14 +17,14 @@ First library created at the 42 course, where we are supposed to replicate vario
   - ft_strlen _(get string length)_
   - ft_strlcpy _(copy a string to another no allocation)_
   - ft_strncmp _(compare strings until n)_
-  - ft_strchr _(locates char in begining of string and return string from there)_
+  - ft_strchr _(locates char in beginning of string and return string from there)_
   - ft_strrchr _(locates char in end of string and return string from there)_
   - ft_strnstr _(locates a string in another and return string from there)_
   - ft_strdup _(copy string to another in new allocated memory)_
   - ft_substr _(copy part of string to another in new allocated memory)_
   - ft_strjoin _(joins two string in new allocated memory)_
   - ft_strtrim _(removes set of characters in string in new allocated memory)_
-  - ft_split _(divides a string by the caracter given)_
+  - ft_split _(divides a string by the character given)_
   - ft_strmapi _(applies function through the string in new allocated memory)_
   - ft_striteri _(applies function through the string)_
   - ft_itoa _(transforms int to string)_
@@ -51,5 +52,7 @@ First library created at the 42 course, where we are supposed to replicate vario
   - ft_lstiter _(iterates through a list and applies a function over it)_
   - ft_lstdelone _(delete a node)_
   - ft_lstadd_back _(adds node to back of the list)_
-  - ft_lstadd_front _(adds node to beggining of the list)_
+  - ft_lstadd_front _(adds node to beginning of the list)_
   - ft_lstclear _(free entire list)_
+
+
