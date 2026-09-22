@@ -92,3 +92,5 @@ gcc your_program.c -I./libft -L./libft -lft -o your_program
 | `ft_lstmap` | Creates a new list by applying a function to each node's content |
 | `ft_lstdelone` | Deletes a single node |
 | `ft_lstclear` | Deletes and frees the entire list |
+
+*This project was done as part of the 42 curriculum.*
