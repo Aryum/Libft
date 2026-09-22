@@ -1,58 +1,94 @@
-
 # Libft
-First library created at the 42 course, where we are supposed to replicate various functions already present in some C libraries and others that might help in future projects. A project meant to teach us about rigor and to check for edge cases 
+
+Recreation of a range of standard C library functions along with several custom utility functions used throughout later projects.
+
+## About
+
+Libft is a personal implementation of core C standard library functions (`string.h`, `ctype.h`, `stdlib.h`) plus a set of additional helper functions — memory utilities, linked lists, and file descriptor output helpers.
+
+The main goal isn't just making the functions work, but making them behave *exactly* like their originals: same edge cases, same return values, same memory-safety guarantees (no leaks, no invalid reads/writes).
+
+## Compilation
+
+```bash
+make        # compiles libft.a
+make clean  # removes object files
+make fclean # removes object files and the library
+make re     # recompiles everything from scratch
+```
+
+## Usage
+
+Include the header and link the library when compiling your project:
+
+```bash
+gcc your_program.c -I./libft -L./libft -lft -o your_program
+```
+
+```c
+#include "libft.h"
+```
 
 ## Functions
-- **Characters**
-  - ft_isalpha _(check if its a letter)_
-  - ft_isdigit _(check if its a number)_
-  - ft_isalnum _(check if its a letter or number)_
-  - ft_isascii _(check if its a valid ascii character)_
-  - ft_isprint _(check if its a printable character)_
-  - ft_toupper _(transforms letter in upper case)_ 
-  - ft_tolower _(transforms letter in lower case)_
 
-- **String**
-  - ft_strlcat _(concatenates strings)_
-  - ft_strlen _(get string length)_
-  - ft_strlcpy _(copy a string to another no allocation)_
-  - ft_strncmp _(compare strings until n)_
-  - ft_strchr _(locates char in beginning of string and return string from there)_
-  - ft_strrchr _(locates char in end of string and return string from there)_
-  - ft_strnstr _(locates a string in another and return string from there)_
-  - ft_strdup _(copy string to another in new allocated memory)_
-  - ft_substr _(copy part of string to another in new allocated memory)_
-  - ft_strjoin _(joins two string in new allocated memory)_
-  - ft_strtrim _(removes set of characters in string in new allocated memory)_
-  - ft_split _(divides a string by the character given)_
-  - ft_strmapi _(applies function through the string in new allocated memory)_
-  - ft_striteri _(applies function through the string)_
-  - ft_itoa _(transforms int to string)_
-  - ft_atoi _(transforms string to int)_
+### Characters
+| Function | Description |
+|---|---|
+| `ft_isalpha` | Checks if a character is a letter |
+| `ft_isdigit` | Checks if a character is a digit |
+| `ft_isalnum` | Checks if a character is a letter or a digit |
+| `ft_isascii` | Checks if a character is a valid ASCII character |
+| `ft_isprint` | Checks if a character is printable |
+| `ft_toupper` | Converts a letter to uppercase |
+| `ft_tolower` | Converts a letter to lowercase |
 
-- **Memory**
-  - ft_memset _(sets x bytes in pointed memory to value)_
-  - ft_bzero _(sets x bytes in pointed memory to 0)_
-  - ft_memcmp _(compares memory in two pointers)_
-  - ft_memchr _(searches memory for value)_
-  - ft_memcpy _(copies memory from one pointer to another)_
-  - ft_memmove _(moves memory from one pointer to another)_
-  - ft_calloc _(allocates new memory and initiates it to 0)_
+### Strings
+| Function | Description |
+|---|---|
+| `ft_strlen` | Returns the length of a string |
+| `ft_strlcpy` | Copies a string into another buffer (no allocation) |
+| `ft_strlcat` | Concatenates two strings into a buffer (no allocation) |
+| `ft_strncmp` | Compares two strings up to n characters |
+| `ft_strchr` | Finds the first occurrence of a character in a string |
+| `ft_strrchr` | Finds the last occurrence of a character in a string |
+| `ft_strnstr` | Finds the first occurrence of a substring within a bounded length |
+| `ft_strdup` | Duplicates a string into newly allocated memory |
+| `ft_substr` | Extracts a substring into newly allocated memory |
+| `ft_strjoin` | Joins two strings into newly allocated memory |
+| `ft_strtrim` | Trims a set of characters from both ends of a string, into new memory |
+| `ft_split` | Splits a string into an array of strings by a delimiter |
+| `ft_strmapi` | Applies a function to each character of a string, returning a new string |
+| `ft_striteri` | Applies a function to each character of a string in place |
+| `ft_itoa` | Converts an integer to a newly allocated string |
+| `ft_atoi` | Converts a string to an integer |
 
-- **File descriptors**
-  - ft_putchar_fd _(puts character in file descriptor)_
-  - ft_putstr_fd _(puts string in file descriptor)_
-  - ft_putendl_fd _(puts string in file descriptor with new line in the end)_
-  - ft_putnbr_fd _(converts int to string and puts it into file descriptor)_
+### Memory
+| Function | Description |
+|---|---|
+| `ft_memset` | Fills a block of memory with a given value |
+| `ft_bzero` | Zeroes out a block of memory |
+| `ft_memcmp` | Compares two blocks of memory |
+| `ft_memchr` | Searches a block of memory for a value |
+| `ft_memcpy` | Copies memory from one location to another |
+| `ft_memmove` | Copies memory between possibly overlapping locations |
+| `ft_calloc` | Allocates zero-initialized memory |
 
-- **Linked Lists**
-  - ft_lstnew _(creates new list node)_
-  - ft_lstmap _(duplicates a list and applies a function over it)_
-  - ft_lstlast _(gets last lst node)_
-  - ft_lstiter _(iterates through a list and applies a function over it)_
-  - ft_lstdelone _(delete a node)_
-  - ft_lstadd_back _(adds node to back of the list)_
-  - ft_lstadd_front _(adds node to beginning of the list)_
-  - ft_lstclear _(free entire list)_
+### File descriptors
+| Function | Description |
+|---|---|
+| `ft_putchar_fd` | Writes a character to a file descriptor |
+| `ft_putstr_fd` | Writes a string to a file descriptor |
+| `ft_putendl_fd` | Writes a string to a file descriptor, followed by a newline |
+| `ft_putnbr_fd` | Converts an integer to a string and writes it to a file descriptor |
 
-
+### Linked lists
+| Function | Description |
+|---|---|
+| `ft_lstnew` | Creates a new list node |
+| `ft_lstadd_front` | Adds a node to the front of the list |
+| `ft_lstadd_back` | Adds a node to the back of the list |
+| `ft_lstlast` | Returns the last node of the list |
+| `ft_lstiter` | Applies a function to each node's content |
+| `ft_lstmap` | Creates a new list by applying a function to each node's content |
+| `ft_lstdelone` | Deletes a single node |
+| `ft_lstclear` | Deletes and frees the entire list |
